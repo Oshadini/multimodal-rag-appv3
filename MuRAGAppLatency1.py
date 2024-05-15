@@ -298,7 +298,10 @@ if uploaded_file is not None:
     else:
         img_base64_list = st.session_state["img_base64_list"]  
         image_summaries = st.session_state["image_summaries"]  
-    
+
+
+    shutil.rmtree(fpath)
+    st.success(f"Folder '{fpath}' and its contents have been successfully removed.")
  
     def create_multi_vector_retriever(
       vectorstore, text_summaries, texts, table_summaries, tables, image_summaries, images
