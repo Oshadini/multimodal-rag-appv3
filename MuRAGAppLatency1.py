@@ -484,7 +484,8 @@ if uploaded_file is not None:
         chain_multimodal_rag = multi_modal_rag_chain(retriever_multi_vector_img)
         docs = retriever_multi_vector_img.get_relevant_documents(question, limit=1)
         st.write(docs)
-
+        processed_docs = split_image_text_types(docs)
+        st.write("Processed Documents:", processed_docs)
         response= chain_multimodal_rag.invoke(question)
         st.write(response)
 
