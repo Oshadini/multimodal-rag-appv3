@@ -295,13 +295,11 @@ if uploaded_file is not None:
         st.session_state["img_base64_list"] = img_base64_list
         st.session_state["image_summaries"] = image_summaries
         st.write(f"{bullet_point} \t\tImage summaries generation completed")
-        shutil.rmtree(fpath)
-        st.success(f"Folder '{fpath}' and its contents have been successfully removed.")
+
     else:
         img_base64_list = st.session_state["img_base64_list"]  
         image_summaries = st.session_state["image_summaries"]  
-        shutil.rmtree(fpath)
-        st.success(f"Folder '{fpath}' and its contents have been successfully removed.")
+    
 
 
 
