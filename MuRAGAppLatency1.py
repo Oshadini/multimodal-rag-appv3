@@ -491,7 +491,7 @@ if uploaded_file is not None:
         
         found_image = False  # Flag variable to track if an image has been found
     
-        for i in range(min(2, len(docs))):
+        for i in range(min(1, len(docs))):
           if docs[i].startswith('/9j') and not found_image:
               #display.display(HTML(f'<img src="data:image/jpeg;base64,{docs[i]}">'))
     
