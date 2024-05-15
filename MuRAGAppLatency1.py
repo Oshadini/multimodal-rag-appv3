@@ -139,7 +139,7 @@ if uploaded_file is not None:
               texts.append(str(element))
       return texts, tables
 
-    #texts, tables = categorize_elements(pdf_elements)
+    texts, tables = categorize_elements(pdf_elements)
 
     if "texts" not in st.session_state or "tables" not in st.session_state:
         # Create session state variables
