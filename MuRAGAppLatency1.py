@@ -474,7 +474,7 @@ if uploaded_file is not None:
     
     
      
-    os.remove("./temp2.pdf")
+   
     question = st.text_input('Enter a question')
     if st.button("Submit"): #if(question):
         vectorstore = Chroma(collection_name="mm_rag_mistral04",embedding_function=OpenAIEmbeddings(openai_api_key = openai.api_key))
