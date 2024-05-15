@@ -508,7 +508,7 @@ if uploaded_file is not None:
 
     
 
-        os.remove("./temp2.pdf")
+        #os.remove("./temp2.pdf")
    
     
     
