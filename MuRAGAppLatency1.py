@@ -507,7 +507,8 @@ if uploaded_file is not None:
         client.delete_collection("mm_rag_mistral04")
 
     
-    shutil.rmtree(temp_file)
+
+    os.remove(temp_file)
    
     
     
