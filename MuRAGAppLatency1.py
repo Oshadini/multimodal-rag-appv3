@@ -516,6 +516,7 @@ if uploaded_file is not None:
               #img = load_image(image_data)
               st.image(image_data)
               #found_image = True  # Set the flag to True to indicate that an image has been found
+              break
         client.delete_collection("mm_rag_mistral04")
 
     
