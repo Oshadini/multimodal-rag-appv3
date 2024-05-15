@@ -508,7 +508,7 @@ if uploaded_file is not None:
 
     
 
-    os.remove(temp_file)
+        os.remove(temp_file)
    
     
     
