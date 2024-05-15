@@ -94,7 +94,7 @@ if uploaded_file is not None:
     if "pdf_elements" not in st.session_state:
         st.title("Extraction process:-")
         st.write(f"{bullet_point} Extraction process started")
-        temp_file="./temp.pdf"
+        temp_file="./temp2.pdf"
         with open(temp_file,"wb") as file:
             file.write(uploaded_file.getvalue())
        
